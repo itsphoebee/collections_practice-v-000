@@ -31,7 +31,7 @@ def kesha_maker(array)
     if i == 3
       "$"
     end
-  end
+  end.join
   #array.each {|name| new_array << name.insert(2,"$")}
   #new_array
 end
