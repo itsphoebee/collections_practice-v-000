@@ -11,3 +11,10 @@ def sort_array_char_count(array)
   array.sort {|a,b| a.length <=> b.length
   }
 end
+
+def swap_elements_from_to(array, index, destination_index)
+  
+  array.sort {array[index] <=>array[destination_index]
+    
+  }
+end
