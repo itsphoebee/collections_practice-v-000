@@ -26,7 +26,12 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-  new_array = []
-  array.each {|name| new_array << name.insert(2,"$")}
-  new_array.slice(3)
+#  new_array = []
+  array.chars.map.with_index. do |c,i|
+    if i == 3
+      "$"
+    end
+  end.join
+  #array.each {|name| new_array << name.insert(2,"$")}
+  #new_array
 end
