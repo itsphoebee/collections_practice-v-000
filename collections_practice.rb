@@ -27,4 +27,5 @@ end
 
 def kesha_maker(array)
   array.map {|name| name.slice(2)}
+  array.map {|name| name.insert(2,"$")}
 end
