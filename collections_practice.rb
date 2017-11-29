@@ -20,6 +20,7 @@ end
 def swap_elements_from_to(array, index, destination_index)
   new_array = []
   new_array << array[index] <=> array[destination_index]
+  new_array
 end
 
 def reverse_array(array)
