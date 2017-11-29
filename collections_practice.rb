@@ -27,6 +27,6 @@ end
 
 def kesha_maker(array)
   new_new_array = []
-  new_array.each {|new_name| new_new_array << new_name.split(3)}
+  array.each {|new_name| new_new_array << new_name.split(3)}
   new_new_array
 end
