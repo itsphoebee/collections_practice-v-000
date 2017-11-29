@@ -30,7 +30,7 @@ def kesha_maker(array)
   new_array = []
   array.map {|name| new_array << name[2]="$"
   }
-  array.map
+  array
 end
 
 def find_a(array)
