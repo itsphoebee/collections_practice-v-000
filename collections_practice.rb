@@ -18,7 +18,7 @@ def swap_elements(array)
 end
 
 def swap_elements_from_to(array, index, destination_index)
-  array.sort {|a, b| a[index] <=> b[destination_index]  
+  array.sort {|a, b| a[index] <=> b[destination_index]
   }
 end
 
@@ -28,10 +28,12 @@ end
 
 def kesha_maker(array)
   new_array = []
-  new_new_array = []
-  array.each {|name| new_array << name.insert(2,"$")}
-  new_array.map {|new_name| new_new_array << new_name.slice(3)}
-  new_new_array
+  array.each {|name|
+    if name[2] == "$"
+      name
+    else new_array << name.insert(2,"$")}
+    end
+  new_array
 end
 
 def find_a(array)
