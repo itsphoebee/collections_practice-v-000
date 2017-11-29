@@ -27,7 +27,7 @@ end
 
 def kesha_maker(array)
 #  new_array = []
-  array.chars.map.with_index do |c,i|
+  array.map.with_index do |c,i|
     if i == 3
       "$"
     end
