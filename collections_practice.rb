@@ -28,9 +28,9 @@ end
 
 def kesha_maker(array)
   new_array = []
-  array.each {|name| new_array << name[2..3]="$"
+  array.map {|name| new_array << name[2..3]="$"
   }
-  new_array
+  array.map
 end
 
 def find_a(array)
