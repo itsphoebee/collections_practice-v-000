@@ -29,7 +29,7 @@ def kesha_maker(array)
   new_array = []
   new_new_array = []
   array.each {|name| new_array << name.insert(2,"$")}
-  new_array.map {|new_name| new_new_array << new_name.chomp(3)}
+  new_array.map {|new_name| new_new_array << new_name.slice(3)}
   new_new_array
 end
 
@@ -41,6 +41,8 @@ def sum_array(array)
   array.inject {|a, b| a+b}
 end
 
-def add_s
-
+def add_s(array)
+  array.each_with_index.map {|element, index| if index != 1 element << "s"
+  end
+  }
 end
