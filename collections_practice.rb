@@ -28,11 +28,7 @@ end
 
 def kesha_maker(array)
   new_array = []
-  array.each {|name|
-    if name[2] == "$"
-      name
-    else new_array << name.insert(2,"$")
-    end
+  array.each {|name| new_array << name.sub!(/(?<=.{2})./, "$")
   }
   new_array
 end
