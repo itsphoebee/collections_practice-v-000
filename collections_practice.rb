@@ -42,7 +42,7 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.each_with_index.map {|element, index| if element != 1 puts "#{element} + "s"
+  array.each_with_index.map {|element, index| if element != 1 puts "#{element + s}" 
   end
   }
 end
