@@ -31,8 +31,9 @@ def kesha_maker(array)
   array.each {|name|
     if name[2] == "$"
       name
-    else new_array << name.insert(2,"$")}
+    else new_array << name.insert(2,"$")
     end
+  }
   new_array
 end
 
